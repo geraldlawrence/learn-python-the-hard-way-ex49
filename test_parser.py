@@ -1,4 +1,5 @@
 from nose.tools import *
+# import lexicon and parser from their file, you should adapt this in your own PC
 from ex49 import lexicon, parser
 
 
