@@ -17,6 +17,7 @@ def peek(word_list):
     else:
         return None
 
+
 def match(word_list, expecting):
     if word_list:
         word = word_list.pop(0)
@@ -30,11 +31,11 @@ def match(word_list, expecting):
         return None
 
 
-
 def skip(word_list, word_type):
     i = 0
     while i < len(word_list):
         if word_list[i][0] == word_type:
+            #del is a tooling to delete specific argument in a list/dictionary/etc...
             del word_list[i]
         else:
             i += 1
